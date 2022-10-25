@@ -12,3 +12,9 @@ end
 # ActiveSupport.on_load(:active_record) do
 #   self.include_root_in_json = true
 # end
+
+ActiveSupport.on_load(:active_record) do
+  include ActiveStorage::Reflection::ActiveRecordExtensions
+  ActiveRecord::Reflection.singleton_class.prepend(ActiveStorage::Reflection::ReflectionExtension)
+  include ActiveStorage::Attached::Model
+end
