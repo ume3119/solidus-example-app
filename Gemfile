@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'net-smtp', require: false
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
@@ -65,3 +67,5 @@ end
 gem 'solidus_paypal_commerce_platform'
 
 gem "matrix", "~> 0.4.2"
+
+gem "rexml", "~> 3.2"
