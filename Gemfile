@@ -63,3 +63,5 @@ group :heroku do
   gem 'paperclip-cloudinary'
 end
 gem 'solidus_paypal_commerce_platform'
+
+gem "matrix", "~> 0.4.2"
